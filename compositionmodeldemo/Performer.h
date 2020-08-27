@@ -1,8 +1,6 @@
 #ifndef Performer_H
 #define Performer_H
 
-//Heres a comment to test git :)
-
 class Performer
 {
 	public:
@@ -23,8 +21,5 @@ class Performer
 			float pitchVariance, float durationOfSection,
 			float startTime);
 };
-
-Performer::Performer(int, float, float, string)
-
 
 #endif
