@@ -1,0 +1,8 @@
+#N canvas 0 45 1364 721 12;
+#X obj 145 283 netsend;
+#X msg 145 158 connect localhost 9999;
+#X msg 240 209 send /table1;
+#X msg 280 238 send /table2;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
