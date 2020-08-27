@@ -1,6 +1,8 @@
 #ifndef Performer_H
 #define Performer_H
 
+//Heres a comment to test git :)
+
 class Performer
 {
 	public:
