@@ -3,14 +3,11 @@
 #include <string>
 #include <vector>
 
+#include "Note.hpp"
+#include "Performer.hpp"
+#include "PerformerGroup.hpp"
+
 using namespace std;
-
-#include "Note.h"
-#include "Performer.h"
-#include "PerformerGroup.h"
-
-//Heres a comment to test git
-
 
 int main()
 {
@@ -60,12 +57,12 @@ int main()
 	cout << direct.getNote(1, 0.0) << endl;
 	cout << directCopy.getNote(1, 0.0) << endl;
 
-	Note a (0, 1, 8.00, 8.00, 80, 0);
+	Note a (0, 1, 9.00, 8.00, 80, 0);
 	vector<Note> noteList;
 	noteList.push_back(a);
 	noteList.push_back(Note(1, 1, 8.04, 8.04, 80, 0));
 	noteList.push_back(Note(2, 1, 8.07, 8.07, 80, 0));
-	noteList.push_back(Note(3, 1, 8.07, 8.37, 80, 0));
+	noteList.push_back(Note(3, 1, 9.00, 9.00, 80, 0));
 	noteList.push_back(Note(0, 3));
 
 	cout << ";Begin Orchestra Output" << endl << endl;
@@ -150,13 +147,13 @@ int main()
 	alea4.push_back(Note(0, 3));
 
 	cout << endl << ";Testing PerformAleatorically Method" << endl;
-	cout << groupA.performAleatorically(alea1, 0.3, 0.1, .2, 35, 55)
+	cout << groupA.performAleatorically(alea1, 0.3, 0.1, .2, 35, 55, 5)
 		 << endl;
-	cout << groupB.performAleatorically(alea2, 0.2, 0.02, .02, 50, 50) 
+	cout << groupB.performAleatorically(alea2, 0.2, 0.02, .02, 50, 50, 5) 
 		<< endl;
-	cout << groupC.performAleatorically(alea3, 0.2, 0.02, .02, 55, 45) 
+	cout << groupC.performAleatorically(alea3, 0.2, 0.02, .02, 55, 45, 6) 
 		<< endl;
-	cout << groupD.performAleatorically(alea4, 0.1, .05, .05, 60, 40) 
+	cout << groupD.performAleatorically(alea4, 0.1, .05, .05, 60, 40, 8) 
 		<< endl;
 
 	cout << endl << ";Testing PerformSurface Method" << endl;
